@@ -2,11 +2,13 @@
 ## VS Code Jasmine snippets
 -------------------
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/xabikos.JasmineSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/xabikos.JasmineSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/xabikos.JasmineSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)
+[![Version](https://vsmarketplacebadge.apphb.com/version/baflo.JasmineSnippetsTS.svg)](https://marketplace.visualstudio.com/items?itemName=baflo.JasmineSnippetsTS)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/baflo.JasmineSnippetsTS.svg)](https://marketplace.visualstudio.com/items?itemName=baflo.JasmineSnippetsTS)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/baflo.JasmineSnippetsTS.svg)](https://marketplace.visualstudio.com/items?itemName=baflo.JasmineSnippetsTS)
 
 This extension contains code snippets for [Jasmine][jasmine] test framework and is based on the awesome [sublime-jasmine][sublime-jusmine] package by [@NicoSantangelo][NicoSantangelo].
+
+This extension is based on the great work of (xabios)[https://github.com/xabikos] in his project https://github.com/xabikos/vscode-javascript. Other than his project I aim at using the current `this` context in each callback function. Herefore, I use TypeScript's `function (this: CurrentThisContext) {}` notation.
 
 ## Installation
 

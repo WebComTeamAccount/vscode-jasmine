@@ -1,14 +1,14 @@
 {
-  "name": "JasmineSnippets",
-  "description": "Code snippets for JavaScript Jasmine test framework in ES6 syntax",
-  "version": "1.0.1",
-  "displayName": "Jasmine code snippets",
-  "publisher": "xabikos",
+  "name": "JasmineSnippetsTS",
+  "description": "Code snippets for JavaScript Jasmine test framework in TS syntax",
+  "version": "1.0.0",
+  "displayName": "Jasmine code snippets for TS",
+  "publisher": "baflo",
   "icon": "images/jasmine.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xabikos/vscode-jasmine"
+    "url": "https://github.com/baflo/vscode-jasmine"
   },
   "engines": {
   	"vscode": "0.10.x"
