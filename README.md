@@ -8,7 +8,7 @@
 
 This extension contains code snippets for [Jasmine][jasmine] test framework and is based on the awesome [sublime-jasmine][sublime-jusmine] package by [@NicoSantangelo][NicoSantangelo].
 
-This extension is based on the great work of (xabios)[https://github.com/xabikos] in his project https://github.com/xabikos/vscode-javascript. Other than his project I aim at using the current `this` context in each callback function. Herefore, I use TypeScript's `function (this: CurrentThisContext) {}` notation.
+This extension is based on the great work of [xabios](https://github.com/xabikos) in his project https://github.com/xabikos/vscode-javascript. Other than his project I aim at using the current `this` context in each callback function. Herefore, I use TypeScript's `function (this: CurrentThisContext) {}` notation.
 
 ## Installation
 
