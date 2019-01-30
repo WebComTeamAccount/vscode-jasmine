@@ -1,7 +1,7 @@
 {
   "name": "JasmineSnippetsTS",
   "description": "Code snippets for JavaScript Jasmine test framework in TS syntax",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Jasmine code snippets for TS",
   "publisher": "baflo",
   "icon": "images/jasmine.png",
@@ -11,7 +11,7 @@
     "url": "https://github.com/baflo/vscode-jasmine"
   },
   "engines": {
-  	"vscode": "0.10.x"
+    "vscode": "0.10.x"
   },
   "categories": [
     "Snippets"
@@ -19,11 +19,11 @@
   "contributes": {
     "snippets": [
       {
-      	"language": "typescript",
+        "language": "typescript",
         "path": "./snippets/snippets.json"
       },
       {
-      	"language": "typescriptreact",
+        "language": "typescriptreact",
         "path": "./snippets/snippets.json"
       }
     ]
