@@ -1,12 +1,12 @@
 {
 	"afterEach": {
 		"prefix": "ae",
-		"body": "afterEach(function (this: ${1:CurrentThisContext}) {\n\t$2\n});",
+		"body": "afterEach(async function (this: ${1:CurrentThisContext}) {\n\t$2\n});",
 		"description": "afterEach function is called once after each spec"
 	},
 	"beforeEach": {
 		"prefix": "be",
-		"body": "beforeEach(function (this: ${1:CurrentThisContext}) {\n\t$2\n});",
+		"body": "beforeEach(async function (this: ${1:CurrentThisContext}) {\n\t$2\n});",
 		"description": "beforeEach function is called once before each spec"
 	},
 	"callsAll": {
@@ -61,7 +61,7 @@
 	},
 	"describe": {
 		"prefix": "desc",
-		"body": "describe('${2:Name of the group}', function (this: ${1:CurrentThisContext}) {\n\t$3\n});",
+		"body": "describe('${1:Name of the group}', () => {\n\t$2\n});",
 		"description": "creates a suite of tests"
 	},
 	"expext": {
@@ -71,17 +71,17 @@
 	},
 	"focusDescribe": {
 		"prefix": "fdesc",
-		"body": "fdescribe('${2:Name of the group}', function (this: ${1:CurrentThisContext}) {\n    $3\n});\n    ",
+		"body": "fdescribe('${1:Name of the group}', () => {\n    $2\n});\n    ",
 		"description": "focused describe"
 	},
 	"focusedIt": {
 		"prefix": "fit",
-		"body": "fit('${2:should behave...}', function (this: ${1:CurrentThisContext}) {\n    $3\n});\n    ",
+		"body": "fit('${2:should behave...}', async function (this: ${1:CurrentThisContext}) {\n    $3\n});\n    ",
 		"description": "focused it"
 	},
 	"it": {
 		"prefix": "it",
-		"body": "it('${2:should behave...}', function (this: ${1:CurrentThisContext}) {\n\t$3\n});",
+		"body": "it('${2:should behave...}', async function (this: ${1:CurrentThisContext}) {\n\t$3\n});",
 		"description": "creates a test method"
 	},
 	"any": {
@@ -161,7 +161,7 @@
 	},
 	"spyOnAndCallFake": {
 		"prefix": "scf",
-		"body": "spyOn(${2:object}, '${3:method}').and.callFake(${4:function (this: ${1:CurrentThisContext}) \\{\n    $5\n\\}});$0\n    ",
+		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => \\{\n    $5\n\\}});$0\n    ",
 		"description": "all calls to the spy will delegate to the supplied function"
 	},
 	"spyOnAndCallThrough": {
@@ -281,12 +281,12 @@
 	},
 	"xDescribe": {
 		"prefix": "xdesc",
-		"body": "xdescribe('${2:Name of the group}', function (this: ${1:CurrentThisContext}) {\n\t$3\n});",
+		"body": "xdescribe('${1:Name of the group}', () => {\n\t$2\n});",
 		"description": "these suites and any specs inside them are skipped when run and thus their results will not appear in the results"
 	},
 	"xIt": {
 		"prefix": "xit",
-		"body": "xit('${2:should behave...}', function (this: ${1:CurrentThisContext}) {\n\t$3\n});",
+		"body": "xit('${2:should behave...}', async function (this: ${1:CurrentThisContext}) {\n\t$3\n});",
 		"description": "pending specs do not run, but their names will show up in the results as pending"
 	}
 }
