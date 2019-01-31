@@ -3,7 +3,7 @@
 This project adheres to [Semantic Versioning](http://semver.org/).  
 Every release, along with the migration instructions, is documented on the Github [Releases](https://github.com/xabikos/vscode-jasmine/releases) page.
 
-[] 0.x.x
+[2019/01/31] 1.2.0
 - `async` suggestion includes trailing space
 - Don't like mixed function types. All callbacks are classic functions.
 - Use double-quotes
