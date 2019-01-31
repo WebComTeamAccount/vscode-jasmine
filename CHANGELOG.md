@@ -5,6 +5,8 @@ Every release, along with the migration instructions, is documented on the Githu
 
 [] 0.x.x
 - `async` suggestion includes trailing space
+- Don't like mixed function types. All callbacks are classic functions.
+- Use double-quotes
 
 [2019/01/30] 0.1.1
 - `async` keywords are optional

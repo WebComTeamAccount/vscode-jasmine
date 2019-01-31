@@ -51,17 +51,17 @@
 	},
 	"createSpy": {
 		"prefix": "cs",
-		"body": "jasmine.createSpy('${2:name}');$0",
+		"body": "jasmine.createSpy(\"${2:name}\");$0",
 		"description": "creates a “bare” spy"
 	},
 	"createSpyObject": {
 		"prefix": "cso",
-		"body": "jasmine.createSpyObj('${2:spy name}', ['${3:method name}'$4]);$0",
+		"body": "jasmine.createSpyObj(\"${2:spy name}\", [\"${3:method name}\"$4]);$0",
 		"description": "creates a mock with multiple spies"
 	},
 	"describe": {
 		"prefix": "desc",
-		"body": "describe('${1:Name of the group}', () => {\n\t$2\n});",
+		"body": "describe(\"${1:Name of the group}\", function () {\n\t$2\n});",
 		"description": "creates a suite of tests"
 	},
 	"expext": {
@@ -71,17 +71,17 @@
 	},
 	"focusDescribe": {
 		"prefix": "fdesc",
-		"body": "fdescribe('${1:Name of the group}', () => {\n    $2\n});\n    ",
+		"body": "fdescribe(\"${1:Name of the group}\", function () {\n    $2\n});\n    ",
 		"description": "focused describe"
 	},
 	"focusedIt": {
 		"prefix": "fit",
-		"body": "fit('${3:should behave...}', ${2:async }function (this: ${1:CurrentThisContext}) {\n    $4\n});\n    ",
+		"body": "fit(\"${3:should behave...}\", ${2:async }function (this: ${1:CurrentThisContext}) {\n    $4\n});\n    ",
 		"description": "focused it"
 	},
 	"it": {
 		"prefix": "it",
-		"body": "it('${3:should behave...}', ${2:async }function (this: ${1:CurrentThisContext}) {\n\t$4\n});",
+		"body": "it(\"${3:should behave...}\", ${2:async }function (this: ${1:CurrentThisContext}) {\n\t$4\n});",
 		"description": "creates a test method"
 	},
 	"any": {
@@ -91,7 +91,7 @@
 	},
 	"objectContaining": {
 		"prefix": "oc",
-		"body": "jasmine.objectContaining('${2:key}': ${3:value}\\}})$0",
+		"body": "jasmine.objectContaining(\"${2:key}\": ${3:value}\\}})$0",
 		"description": "when an expectation only cares about certain key/value pairs in the actual"
 	},
 	"notToBe": {
@@ -161,42 +161,42 @@
 	},
 	"spyOnAndCallFake": {
 		"prefix": "scf",
-		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => \\{\n    $5\n\\}});$0\n    ",
+		"body": "spyOn(${1:object}, \"${2:method}\").and.callFake(${3:() => \\{\n    $5\n\\}});$0\n    ",
 		"description": "all calls to the spy will delegate to the supplied function"
 	},
 	"spyOnAndCallThrough": {
 		"prefix": "sct",
-		"body": "spyOn(${2:object}, '${3:method}').and.callThrough();$0",
+		"body": "spyOn(${2:object}, \"${3:method}\").and.callThrough();$0",
 		"description": "tracks all calls to it and delegates to the actual implementation"
 	},
 	"spyOnAndReturnValue": {
 		"prefix": "srv",
-		"body": "spyOn(${2:object}, '${3:method}').and.returnValue('${4:value}');$0",
+		"body": "spyOn(${2:object}, \"${3:method}\").and.returnValue(\"${4:value}\");$0",
 		"description": "all calls to the function will return a specific value"
 	},
 	"spyOnAndStub": {
 		"prefix": "ss",
-		"body": "spyOn(${2:object}, '${3:method}').and.stub();$0",
+		"body": "spyOn(${2:object}, \"${3:method}\").and.stub();$0",
 		"description": "The original stubbing behavior is returned at any time"
 	},
 	"spyOnAndThrowError": {
 		"prefix": "ste",
-		"body": "spyOn(${2:object}, '${3:method}').and.throwError('${4:error}');$0",
+		"body": "spyOn(${2:object}, \"${3:method}\").and.throwError(\"${4:error}\");$0",
 		"description": "all calls to the spy will throw the specified value as an error"
 	},
 	"spyOnProperty get": {
 		"prefix": "spg",
-		"body": "spyOnProperty(${2:object}, '${3:method}', 'get')$4;$0",
+		"body": "spyOnProperty(${2:object}, \"${3:method}\", \"get\")$4;$0",
 		"description": "Install a spy on a property onto an existing object with get accessType"
 	},
 	"spyOnProperty set": {
 		"prefix": "sps",
-		"body": "spyOnProperty(${2:object}, '${3:method}', 'set')$4;$0",
+		"body": "spyOnProperty(${2:object}, \"${3:method}\", \"set\")$4;$0",
 		"description": "Install a spy on a property onto an existing object with set accessType"
 	},
 	"spyOn": {
 		"prefix": "so",
-		"body": "spyOn(${2:object}, '${3:method}')$4;$0",
+		"body": "spyOn(${2:object}, \"${3:method}\")$4;$0",
 		"description": "creates a spy for the specified method"
 	},
 	"toBe": {
@@ -281,12 +281,12 @@
 	},
 	"xDescribe": {
 		"prefix": "xdesc",
-		"body": "xdescribe('${1:Name of the group}', () => {\n\t$2\n});",
+		"body": "xdescribe(\"${1:Name of the group}\", function () {\n\t$2\n});",
 		"description": "these suites and any specs inside them are skipped when run and thus their results will not appear in the results"
 	},
 	"xIt": {
 		"prefix": "xit",
-		"body": "xit('${3:should behave...}', ${2:async }function (this: ${1:CurrentThisContext}) {\n\t$4\n});",
+		"body": "xit(\"${3:should behave...}\", ${2:async }function (this: ${1:CurrentThisContext}) {\n\t$4\n});",
 		"description": "pending specs do not run, but their names will show up in the results as pending"
 	}
 }
