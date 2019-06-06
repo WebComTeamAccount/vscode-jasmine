@@ -28,6 +28,10 @@
       }
     ]
   },
+  "scripts": {
+    "prepublish": "vsce package",
+    "postpublish": "vsce publish"
+  },
   "devDependencies": {
     "vsce": "^1.62.0"
   }
