@@ -1,7 +1,7 @@
 {
   "name": "JasmineSnippetsTS",
   "description": "Code snippets for JavaScript Jasmine test framework in TS syntax",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "displayName": "Jasmine code snippets for TS",
   "publisher": "baflo",
   "icon": "images/jasmine.png",
