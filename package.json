@@ -27,5 +27,8 @@
         "path": "./snippets/snippets.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vsce": "^1.62.0"
   }
 }
