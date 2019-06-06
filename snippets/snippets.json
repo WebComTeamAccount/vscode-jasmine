@@ -76,12 +76,12 @@
 	},
 	"focusedIt": {
 		"prefix": "fit",
-		"body": "fit(\"${3:should behave...}\", ${2:async }function (this: ${1:CurrentThisContext}) {\n    $4\n});\n    ",
+		"body": "fit(\"${1:should behave...}\", ${3:async }function (this: ${2:CurrentThisContext}) {\n\t$4\n});\n    ",
 		"description": "focused it"
 	},
 	"it": {
 		"prefix": "it",
-		"body": "it(\"${3:should behave...}\", ${2:async }function (this: ${1:CurrentThisContext}) {\n\t$4\n});",
+		"body": "it(\"${1:should behave...}\", ${3:async }function (this: ${2:CurrentThisContext}) {\n\t$4\n});",
 		"description": "creates a test method"
 	},
 	"any": {
@@ -286,7 +286,7 @@
 	},
 	"xIt": {
 		"prefix": "xit",
-		"body": "xit(\"${3:should behave...}\", ${2:async }function (this: ${1:CurrentThisContext}) {\n\t$4\n});",
+		"body": "xit(\"${1:should behave...}\", ${3:async }function (this: ${2:CurrentThisContext}) {\n\t$4\n});",
 		"description": "pending specs do not run, but their names will show up in the results as pending"
 	}
 }
